@@ -1,6 +1,6 @@
 git clone https://github.com/spring-projects/spring-petclinic.git
 cd spring-petclinic
 ./mvnw package
-wget https://search.maven.org/remotecontent?filepath=co/elastic/apm/elastic-apm-agent/1.4.0/elastic-apm-agent-1.4.0.jar -O elastic-apm-agent-1.4.0.jar
-java -javaagent:elastic-apm-agent-1.4.0.jar -Delastic.apm.service_name=pet-clinic -Delastic.apm.server_urls=http://localhost:8200 -Delastic.apm.application_packages=org/springframework -jar target/*.jar
+wget https://search.maven.org/remotecontent?filepath=co/elastic/apm/elastic-apm-agent/1.6.1/elastic-apm-agent-1.6.1.jar -O elastic-apm-agent-1.6.1.jar
+java -javaagent:elastic-apm-agent-1.6.1.jar -Delastic.apm.service_name=pet-clinic -Delastic.apm.server_urls=http://localhost:8200 -Delastic.apm.application_packages=org/springframework -jar target/*.jar
 
